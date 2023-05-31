@@ -8,6 +8,7 @@
         "weather",
         "final",
         "downsampled",
+        "grey",
         "dithered"
     ],
     "passes": [
@@ -68,8 +69,13 @@
             "outtarget": "downsampled"
         },
         {
-            "name": "dither",
+            "name": "greyscale",
             "intarget": "downsampled",
+            "outtarget": "grey"
+        },
+        {
+            "name": "dither",
+            "intarget": "grey",
             "outtarget": "minecraft:main"
         }
     ]
